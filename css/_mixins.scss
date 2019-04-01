@@ -1,0 +1,12 @@
+@mixin clearfix {
+  &:before,             //add before to avoid margin collapse
+  &:after {
+    content: "";
+    display: block;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
